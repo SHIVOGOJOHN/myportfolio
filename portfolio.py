@@ -257,7 +257,7 @@ def display_home():
         #st.header("Supply Chains")
         st.markdown("""
             <div style="text-align: justify;">
-        In the modern world of evolving technology, businesses are increasingly relying on advanced solutions to navigate complex challenges. I am a Machine Learning Engineer and Researcher dedicated to developing innovative strategies that address these challenges. My expertise lies in leveraging Deep Learning, Machine Learning, and AI techniques to extract valuable insights from large datasets. I focus on building and maintaining robust systems that empower individuals, businesses, and organizations to achieve their goals effectively.</div>
+        This platform features a collection of my research projects, technical papers, practical systems, and AI models, each focused on impactful and practical applications across industries. You can browse through my published work, read detailed abstracts, explore related files, and even interact with an AI assistant trained on each project to get contextual insights. Whether you're a potential collaborator, AI practitioner, or fellow researcher, feel free to explore, ask questions, and connect. Let’s innovate together.</div>
         """, unsafe_allow_html=True)
         
         st.write("######")
