@@ -1,0 +1,5 @@
+streamlit
+pillow
+mysql-connector-python
+tiktoken
+langchain_groq
