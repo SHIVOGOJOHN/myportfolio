@@ -255,7 +255,7 @@ def display_home():
         st.title("Shivogo K. John")
         st.header("Machine Learning Eng. ")
         #st.header("Supply Chains")
-       st.markdown("""
+        st.markdown("""
             <div style="text-align: justify;">
         In the modern world of evolving technology, businesses are increasingly relying on advanced solutions to navigate complex challenges. I am a Machine Learning Engineer and Researcher dedicated to developing innovative strategies that address these challenges. My expertise lies in leveraging Deep Learning, Machine Learning, and AI techniques to extract valuable insights from large datasets. I focus on building and maintaining robust systems that empower individuals, businesses, and organizations to achieve their goals effectively.</div>
         """, unsafe_allow_html=True)
