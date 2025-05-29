@@ -531,7 +531,7 @@ def display_contact():
 def scroll_to_top():
     st.markdown("""
         <div style="position: fixed; bottom: 10px; right: 10px;">
-            <a href="##supply-chains">
+            <a href="#shivogo-k-john">
                 <button style="
                     background: #000000;
                     color: white;
@@ -596,7 +596,7 @@ def add_background():
     st.markdown(f"""
         <style>
             .stApp {{
-                background-image: url("https://raw.githubusercontent.com/SHIVOGOJOHN/Research-Paper-Tool/main/static/images/background9.jpg.jpg");
+                background-image: url("https://raw.githubusercontent.com/SHIVOGOJOHN/Research-Paper-Tool/main/static/images/background3.jpeg");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
