@@ -13,7 +13,7 @@ import base64
 import tiktoken
 from langchain_groq import ChatGroq
 
-GROQ_API_KEY = st.secrets["general"]["GROQ_API_KEY"]
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 st.set_page_config(page_title = 'ML/AI Research', page_icon = '📊', layout = 'wide')
 llm = ChatGroq(groq_api_key=GROQ_API_KEY, model_name="qwen-qwq-32b")
 MAX_TOKENS = 5000
@@ -58,11 +58,11 @@ def get_db_connection():
         conn=mysql.connector.connect(
             charset="utf8mb4",
             connection_timeout=10,
-            database= st.secrets["general"]["database"],
+            database= os.getenv("database"),
             host="mysql-f3601b9-jonesjorney-bd4e.f.aivencloud.com",
-            password=st.secrets["general"]["password"],
+            password=st.os.getenv("password"),
             port=21038,
-            user=st.secrets["general"]["user"]
+            user=os.getenv("user")
             )
         return conn
     
@@ -383,8 +383,8 @@ def display_home():
 def admin_login():
         
     # Admin Credentials
-    ADMIN_USERNAME = st.secrets["general"]["ADMIN_USERNAME"]
-    ADMIN_PASSWORD = st.secrets["general"]["ADMIN_PASSWORD"]
+    ADMIN_USERNAME = os.getenv("ADMIN_USERNAME")
+    ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
 
     st.title("Admin Login")
     if st.session_state.logged_in:
