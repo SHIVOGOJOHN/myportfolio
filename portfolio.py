@@ -669,8 +669,8 @@ def main():
     setup_directories()
     # Admin Credentials
     
-    ADMIN_USERNAME = st.secrets["general"]["ADMIN_USERNAME"]
-    ADMIN_PASSWORD = st.secrets["general"]["ADMIN_PASSWORD"]
+    ADMIN_USERNAME = os.getenv("ADMIN_USERNAME")
+    ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
     
     st.sidebar.write("---")
     
